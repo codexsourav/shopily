@@ -43,9 +43,9 @@ class _AddressPageState extends State<AddressPage> {
       address2.text = data['addr2'] ?? "";
       city.text = data['city'] ?? "";
       pincode.text = (data['pincode'] ?? "").toString();
+      state = data['state'];
     }
     setState(() {
-      state = data['state'];
       address = data;
       loading = false;
     });
